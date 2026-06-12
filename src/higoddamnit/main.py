@@ -23,7 +23,7 @@ def update_item(item_id:int, item: Item):
     return {"item_name": item.name, "item_id": item.id}
 
 def main() -> None:
-    uvicorn.run(app, port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 
 if __name__ == "__main__":
     main()
